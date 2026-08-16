@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicholas Sosa — Photographs</title>
+<meta name="description" content="Photographs by Nicholas Sosa — frames from the Texas Hill Country. Light, machines, and small things holding still.">
+<meta property="og:title" content="Nicholas Sosa — Photographs">
+<meta property="og:description" content="Frames from the Texas Hill Country. No feed, no filter — just the ones worth keeping.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/ns-01-seiko-orange.jpg">
+<meta name="theme-color" content="#f6f1e6">
+<link rel="preload" as="image" href="images/ns-01-seiko-orange.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@300;400&family=Caveat:wght@500;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body class="home">
+<div class="page-fade"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/ns-01-seiko-orange.jpg')"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <h1 class="wordmark">Nicholas Sosa</h1>
+    <div class="signature">Photographs</div>
+    <div class="hero-rule"></div>
+    <p class="hero-tag">Frames that came out of my camera and stayed with me.<br>Center Point, Texas &middot; the Hill Country</p>
+    <a class="cta" href="#gallery">See the Frames</a>
+  </div>
+  <a href="#gallery" class="scroll-cue" aria-label="Scroll to the gallery">&#9660;</a>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="section-head reveal">
+    <span class="eyebrow">The Photographs</span>
+    <h2>Opening the doors</h2>
+    <div class="head-rule"></div>
+    <p class="section-note">The first frame on my own wall &mdash; more on the way. No feed, no algorithm. Just the ones worth keeping.</p>
+  </div>
+  <main class="grid solo" id="grid" aria-live="polite">
+    <!-- populated from assets/gallery.json by assets/gallery.js -->
+  </main>
+  <noscript><p class="nojs">This gallery needs JavaScript to load. The photographs live in <code>images/</code>.</p></noscript>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner reveal">
+    <span class="eyebrow">About</span>
+    <h2>Nicholas Sosa</h2>
+    <div class="head-rule centered"></div>
+    <!-- PLACEHOLDER COPY — Nick: this bio is yours to write. Swap it whenever you like. -->
+    <p>I make pictures of what catches my eye out here in the Hill Country &mdash; the way light lands on a thing, the machines I keep running, small stuff holding still. This is where they live now: my own wall, not somebody else&rsquo;s feed.</p>
+    <p class="about-note">[placeholder copy &mdash; Nick, rewrite this in your own words]</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="reveal">
+    <div class="foot-sig">Nicholas Sosa</div>
+    <div class="license">&copy; Nicholas Sosa. All photographs are my own work &middot; Center Point, Texas.</div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" aria-label="Previous">&#8249;</button>
+  <figure class="lb-figure">
+    <img src="" alt="">
+    <figcaption class="lb-cap"></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" aria-label="Next">&#8250;</button>
+  <div class="lb-count"></div>
+</div>
+
+<script src="assets/gallery.json.js?v=1"></script>
+<script src="assets/gallery.js?v=1"></script>
+<script>
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.18 });
+  els.forEach(function (e) { io.observe(e); });
+})();
+</script>
+</body>
+</html>
