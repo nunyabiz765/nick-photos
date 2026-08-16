@@ -32,6 +32,36 @@
       "h": 1404,
       "caption": "Senisa Springs",
       "alt": "A blue suburban street sign reading Senisa Springs beneath tall summer cumulus, framed by a live oak and a blooming crepe myrtle over a quiet Texas street"
+    },
+    {
+      "id": "ns-04-pork-chops",
+      "category": "life",
+      "thumb": "thumbs/ns-04-pork-chops.jpg",
+      "full": "images/ns-04-pork-chops.jpg",
+      "w": 1500,
+      "h": 2000,
+      "caption": "Chops in the pan",
+      "alt": "Pork chops searing golden-brown in butter in a stainless steel pan"
+    },
+    {
+      "id": "ns-05-sunset-field",
+      "category": "land",
+      "thumb": "thumbs/ns-05-sunset-field.jpg",
+      "full": "images/ns-05-sunset-field.jpg",
+      "w": 2000,
+      "h": 1500,
+      "caption": "Last light",
+      "alt": "The sun setting over a Texas grass field, tall seed heads in the foreground and a low tree line on the horizon"
+    },
+    {
+      "id": "ns-06-live-oak-bark",
+      "category": "land",
+      "thumb": "thumbs/ns-06-live-oak-bark.jpg",
+      "full": "images/ns-06-live-oak-bark.jpg",
+      "w": 1500,
+      "h": 2000,
+      "caption": "Live oak bark",
+      "alt": "Close-up of cracked pale live oak bark with an acorn wedged into a crevice"
     }
   ]
 }
